@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --blue: #155263;
+  --orange: #ff6f3c;
+  --lightOrange: #ff9a3c;
+  --yellow: #ffc93c;
+}
+
+a,
+a::after {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+body {
+  color: var(--blue);
+  background-color: var(--lightOrange);
+}
+
+.content {
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+  /* For mobile phones: */
+  nav {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    font-size: small;
+  }
+  nav h3 {
+    border: 2px solid red;
+  }
+  .aboutUs {
+    min-width: 50vw;
+  }
+}
+
+header {
+  color: var(--yellow);
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+
+  padding: 1vw;
+}
+
+nav {
+  background-color: var(--orange);
+
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  justify-content: center;
+  min-height: 6vh;
+}
+
+nav h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 7vw;
+  min-height: 5vh;
+}
+
+nav h3:hover {
+  color: var(--yellow);
+  background-color: var(--blue);
+}
+
+nav h3:active {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.main {
+  text-align: center;
+}
+
+.welcome {
+  text-align: center;
+  padding: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-bottom: 2px solid var(--orange);
+}
+
+.aboutUs {
+  padding: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-bottom: 2px solid var(--orange);
+}
+
+.aboutUs h3 {
+  text-decoration: underline;
+  font-size: x-large;
+}
+
+.aboutUs p {
+  padding-top: 0.5vw;
+  padding-left: 21%;
+  max-width: 50vw;
+  font-size: large;
+}
+
+.findUs {
+  padding: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-bottom: 2px solid var(--orange);
+}
+
+.hours {
+  padding: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-bottom: 2px solid var(--orange);
+}
+
+.socials {
+  padding: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 1vw;
+  border-bottom: 2px solid var(--orange);
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1vw;
+  margin-left: -1vw;
+  display: flex;
+  justify-content: center;
+}
+
+.menuNav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 1vw;
+  border-bottom: 2px solid var(--blue);
+}
+
+.menuNav li {
+  align-self: baseline;
+  margin: 0.75vw;
+}
+
+#drinks,
+#appetizers,
+#lunch,
+#dinner {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 1vw;
+  border-bottom: 2px solid var(--blue);
+}
+
+#drinks h3,
+#appetizers h3,
+#lunch h3,
+#dinner h3 {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.lunchList,
+.drinkList,
+.appetizersList,
+.dinnerList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  column-gap: 5vw;
+}
+
+.drink1,
+.drink2,
+.drink3,
+.appetizer1,
+.appetizer2,
+.appetizer3,
+.lunch1,
+.lunch2,
+.lunch3,
+.lunch4,
+.lunch5,
+.lunch6,
+.dinner1,
+.dinner2,
+.dinner3,
+.dinner4,
+.dinner5,
+.dinner6 {
+  border-radius: 1vw;
+  width: 25vw;
+  background-color: var(--orange);
+  padding: 1vw;
+  margin: 1vw;
+  margin-left: -1vw;
+}
+
+.contactPage {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 1vw;
+  border-bottom: 2px solid var(--blue);
+}
+
+.contactPage div div {
+  margin-left: 30vw;
+  border-radius: 1vw;
+  width: 25vw;
+  background-color: var(--orange);
+  padding: 1vw;
+  margin: 1vw;
+  margin-left: -1vw;
+}
